@@ -1,10 +1,10 @@
 # GymApp Privacy Policy
 
-**Last updated: 18 September 2026**
+**Last updated: 25 September 2026**
 
 ## The short version
 
-GymApp stores everything on your device. There are no accounts and no analytics. The one thing that leaves your phone is what you send the AI coach: when you ask it something, your training and the things you allowed go to a third-party AI provider, which writes the answer. The coach asks your permission, and shows you exactly what is sent, before it sends anything at all. If you never use the coach, your data never leaves your phone unless you export or share it yourself.
+GymApp stores everything on your device. There are no accounts and no analytics. The one thing that leaves your phone is what you send the AI coach: when you ask it something, your training and the things you allowed go to a third-party AI provider, which writes the answer. The coach asks your permission, and shows you exactly what is sent, before it sends anything at all. If you never use the coach, your data never leaves your phone unless you export or share it yourself. While the app is in beta there is one more, and it is off unless you switch it on: **Share my chats with the developer**, in **Settings → Coach**, sends your coach conversations to our own server for the developer to read. It does not exist in the App Store version.
 
 ## What the app stores, and where
 
@@ -31,7 +31,7 @@ Once you have agreed, **Settings → Coaching → What the coach reads** holds a
 - During a workout: the routine, the exercise you are on, and the sets done so far.
 - What you have told the app about yourself: your goal (including any target weight you set), your weekly workout target, training days, experience, session length, the equipment you have or don't have, exercises you dislike, and any injuries, with the notes you add about them.
 - The names of the exercises in the app's library, the coach personality you picked, your weight unit, and the date and time on your phone.
-- A random ID, created the first time you use the coach. Our server uses it only to count questions, and does not pass it on.
+- A random ID, created the first time you use the coach. Our server uses it to count questions, and, if you switched the beta's **Share my chats** on, to file the conversations it sent under. It is not passed on.
 
 And, unless you switch the category off:
 
@@ -52,9 +52,9 @@ To a small server we run on Cloudflare, which passes it to a third-party AI prov
 
 **How long it is kept**
 
-- Our server does not store your messages or the coach's answers. For each random ID, it keeps a daily count of questions asked and what they cost to answer. It also keeps brief error records, which contain no message text.
+- Our server does not store your messages or the coach's answers. The one exception is the beta: if you switch **Share my chats with the developer** on in **Settings → Coach**, your coach conversations are sent to our server so the developer can read them and improve the coach. They are deleted automatically after 60 days, the switch is off unless you turn it on, and it does not exist in the App Store version of the app. For each random ID, it keeps a daily count of questions asked and what they cost to answer. It also keeps brief error records, which contain no message text.
 - The AI provider does not use it to train its models. It may keep it for up to 30 days to check for abuse, and then deletes it, unless the law requires it to keep it longer.
-- Your conversations stay on your phone. You can delete any of them from the coach's history, all of them at once with **Coaching → Delete all chats**, and deleting the app removes them all.
+- Your conversations stay on your phone, unless you switched the beta's **Share my chats** on, in which case a copy also sits on our server. You can delete any of them from the coach's history, all of them at once with **Coaching → Delete all chats**, and deleting the app removes them all. Deleting a chat in the app deletes it from your phone; ask the developer to delete the copy, or leave it to expire 60 days after it was last sent.
 
 **Your choice**
 
@@ -64,7 +64,7 @@ The coach is optional. Everything else in GymApp works the same if you never use
 
 If you allow it, GymApp writes your **finished workouts** to Apple Health, and reads **heart rate** and **energy burned** while a workout is running so it can show them to you during and after the session. On Apple Watch it also reads resting energy for the same reason. All of that stays on your device.
 
-Separately, and only if you switch **Apple Health** on for coaching, GymApp reads your **sleep, resting heart rate, heart rate variability, steps, active energy, body weight and the workouts other apps have written to Health**, and sends them to the coach as described above so it can factor them into its advice. That is the only Health data that leaves your device, it goes nowhere except to answer you, and it is never used for advertising, marketing or data mining. Switching the category off in **Settings → Coaching** stops it at once.
+Separately, and only if you switch **Apple Health** on for coaching, GymApp reads your **sleep, resting heart rate, heart rate variability, steps, active energy, body weight and the workouts other apps have written to Health**, and sends them to the coach as described above so it can factor them into its advice. That is the only Health data that leaves your device, it goes nowhere except to answer you, and, if you switched the beta's **Share my chats** on, into the copy of that conversation on our server, where the coach's own answer may quote those figures back to you. It is never used for advertising, marketing or data mining. Switching the category off in **Settings → Coaching** stops it at once.
 
 You can grant or revoke each permission at any time in the iOS **Health app → Sharing → Apps**, and refusing has no effect beyond those figures not appearing.
 
@@ -86,7 +86,7 @@ GymApp contains no analytics, no advertising, no trackers, and no third-party SD
 
 You can erase your workouts, routines, body data, photos, coach profile, and coach conversations at any time with **Settings → Reset all data** inside the app. The coach's own page deletes just its side of that: **Delete all chats** removes every conversation, and **Reset what the coach knows** clears your goal, days, injuries, experience, session length, equipment and dislikes. Deleting the app removes all of its data from your device.
 
-Our server holds nothing of yours to delete except the daily question counts, which carry no name or contact details.
+Our server holds nothing of yours to delete except the daily question counts, and, if you turned the beta's **Share my chats** switch on, the conversations it sent, which are deleted 60 days after the last one is sent, or sooner if you ask. None of it carries your name or contact details.
 
 ## Children
 
