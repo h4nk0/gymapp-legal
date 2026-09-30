@@ -1,6 +1,6 @@
 # GymApp Privacy Policy
 
-**Last updated: 25 September 2026**
+**Last updated: 30 September 2026**
 
 ## The short version
 
@@ -27,6 +27,7 @@ Once you have agreed, **Settings → Coaching → What the coach reads** holds a
 **What is sent each time you ask**
 
 - Your message, and the recent messages in the same conversation, including the exercises of any routine or plan the coach showed you.
+- Any body part the coach worked around in one of your chats in the last 30 days, so a later chat can check on it.
 - A summary of your last twelve weeks of training: how often you train, your sets per muscle group each week, the exercises you do (weighted, bodyweight and timed) with their best and latest sets and your records, your routines and the exercises in them, the names of your gyms, the equipment your workouts used, and the habits your log shows (such as how long your sessions run and which lifts have stalled).
 - During a workout: the routine, the exercise you are on, and the sets done so far.
 - What you have told the app about yourself: your goal (including any target weight you set), your weekly workout target, training days, experience, session length, the equipment you have or don't have, exercises you dislike, and any injuries, with the notes you add about them.
