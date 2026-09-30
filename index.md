@@ -4,13 +4,13 @@
 
 ## The short version
 
-GymApp stores everything on your device. There are no accounts and no analytics. The one thing that leaves your phone is what you send the AI coach: when you ask it something, your training and the things you allowed go to a third-party AI provider, which writes the answer. The coach asks your permission, and shows you exactly what is sent, before it sends anything at all. If you never use the coach, your data never leaves your phone unless you export or share it yourself. While the app is in beta there is one more, and it is off unless you switch it on: **Share my chats with the developer**, in **Settings → Coach**, sends your coach conversations to our own server for the developer to read. It does not exist in the App Store version.
+GymApp stores everything on your device. There are no accounts and no analytics. The one thing that leaves your phone is what you send the AI coach: when you ask it something, your training and the things you allowed go to a third-party AI provider, which writes the answer. The coach asks your permission, and shows you exactly what is sent, before it sends anything at all. If you never use the coach, your data never leaves your phone unless you export or share it yourself. While the app is in beta there is one more, and it is off unless you switch it on: **Share my chats with the developer**, in **Settings → Coach**, sends your coach conversations to our own server for the developer to read. It does not exist in the App Store version. The beta also has a **report button** on every screen: tapping it takes a screenshot and opens a note, and nothing is sent unless you tap Send (see "The beta's report button" below).
 
 ## What the app stores, and where
 
 GymApp keeps your workouts, routines, body measurements, progress photos, gym profiles, coach conversations, and settings **locally on your device**. This data is included in your device's standard iOS backups (iCloud or computer backups), which are governed by Apple's own privacy terms.
 
-We do not sell any of it, and we cannot see it. The only part that ever leaves your device is what the coach sends when you use it, described next.
+We do not sell any of it, and we cannot see it. The only part that ever leaves your device is what the coach sends when you use it, described next, and, in the beta, a report you choose to send with the report button (see "The beta's report button").
 
 ## The AI coach
 
@@ -32,7 +32,7 @@ Once you have agreed, **Settings → Coaching → What the coach reads** holds a
 - During a workout: the routine, the exercise you are on, and the sets done so far.
 - What you have told the app about yourself: your goal (including any target weight you set), your weekly workout target, training days, experience, session length, the equipment you have or don't have, exercises you dislike, and any injuries, with the notes you add about them.
 - The names of the exercises in the app's library, the coach personality you picked, your weight unit, and the date and time on your phone.
-- A random ID, created the first time you use the coach. Our server uses it to count questions, and, if you switched the beta's **Share my chats** on, to file the conversations it sent under. It is not passed on.
+- A random ID, created the first time you use the coach. Our server uses it to count questions, and, if you switched the beta's **Share my chats** on, to file the conversations it sent under. A report sent with the beta's report button carries it too, if it exists. It is not passed on.
 
 And, unless you switch the category off:
 
@@ -65,7 +65,7 @@ The coach is optional. Everything else in GymApp works the same if you never use
 
 If you allow it, GymApp writes your **finished workouts** to Apple Health, and reads **heart rate** and **energy burned** while a workout is running so it can show them to you during and after the session. On Apple Watch it also reads resting energy for the same reason. All of that stays on your device.
 
-Separately, and only if you switch **Apple Health** on for coaching, GymApp reads your **sleep, resting heart rate, heart rate variability, steps, active energy, body weight and the workouts other apps have written to Health**, and sends them to the coach as described above so it can factor them into its advice. That is the only Health data that leaves your device, it goes nowhere except to answer you, and, if you switched the beta's **Share my chats** on, into the copy of that conversation on our server, where the coach's own answer may quote those figures back to you. It is never used for advertising, marketing or data mining. Switching the category off in **Settings → Coaching** stops it at once.
+Separately, and only if you switch **Apple Health** on for coaching, GymApp reads your **sleep, resting heart rate, heart rate variability, steps, active energy, body weight and the workouts other apps have written to Health**, and sends them to the coach as described above so it can factor them into its advice. Apart from anything visible in a screenshot you choose to send with the beta's report button, that is the only Health data that leaves your device, it goes nowhere except to answer you, and, if you switched the beta's **Share my chats** on, into the copy of that conversation on our server, where the coach's own answer may quote those figures back to you. It is never used for advertising, marketing or data mining. Switching the category off in **Settings → Coaching** stops it at once.
 
 You can grant or revoke each permission at any time in the iOS **Health app → Sharing → Apps**, and refusing has no effect beyond those figures not appearing.
 
@@ -77,17 +77,28 @@ When you choose to share a workout, the app hands the image or text to the stand
 
 ## Camera and photo library
 
-If you add progress photos, GymApp asks for camera or photo-library access. Photos you take or pick are saved into the app's private storage on your device and are used only to show them back to you inside the app. They are never uploaded anywhere.
+If you add progress photos, GymApp asks for camera or photo-library access. Photos you take or pick are saved into the app's private storage on your device and are used only to show them back to you inside the app. They are never uploaded anywhere, unless one is on screen when you send a report with the beta's report button and you leave its screenshot switched on.
+
+## The beta's report button
+
+While the app is in beta, a small button floats on every screen. Tapping it takes a screenshot of what you were looking at and opens a note to the developer. **Nothing is sent until you tap Send.** When you do, our own server receives:
+
+- your note, exactly as you wrote it, and the date and time you wrote it (in your phone's time zone);
+- the screenshot, unless you switched it off in the note first. It shows whatever was on your screen, which can include your own workouts, body figures, Health figures or photos;
+- the app's diagnostics log: app version, phone model, iOS version, light or dark mode, text size, free storage, and a record of app events such as launches and failed saves. It contains no names, weights, reps or notes;
+- the coach's random ID if you have used the coach, so reports from one phone can be read together. Sending a report never creates that ID.
+
+Reports are read by the developer to fix problems, and are deleted automatically 60 days after they are sent, or sooner if you ask. A report that could not be sent waits on your phone (not in your backups) and goes the next time the app is open with a connection. **Settings → Beta → Show report button** hides the button and deletes any report still waiting. The button does not exist in the App Store version.
 
 ## Analytics and tracking
 
-GymApp contains no analytics, no advertising, no trackers, and no third-party SDKs that collect data. Apart from the coach, and Apple's own services such as TestFlight and the App Store, the app makes no network requests.
+GymApp contains no analytics, no advertising, no trackers, and no third-party SDKs that collect data. Apart from the coach, the beta's report button when you send a report, and Apple's own services such as TestFlight and the App Store, the app makes no network requests.
 
 ## Data deletion
 
 You can erase your workouts, routines, body data, photos, coach profile, and coach conversations at any time with **Settings → Reset all data** inside the app. The coach's own page deletes just its side of that: **Delete all chats** removes every conversation, and **Reset what the coach knows** clears your goal, days, injuries, experience, session length, equipment and dislikes. Deleting the app removes all of its data from your device.
 
-Our server holds nothing of yours to delete except the daily question counts, and, if you turned the beta's **Share my chats** switch on, the conversations it sent, which are deleted 60 days after the last one is sent, or sooner if you ask. None of it carries your name or contact details.
+Our server holds nothing of yours to delete except the daily question counts, and, if you turned the beta's **Share my chats** switch on, the conversations it sent, which are deleted 60 days after the last one is sent, or sooner if you ask, and any reports you sent with the beta's report button, deleted 60 days after each was sent, or sooner if you ask. None of it carries your name or contact details, unless a screenshot you sent shows them.
 
 ## Children
 
