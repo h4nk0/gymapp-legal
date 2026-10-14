@@ -1,14 +1,14 @@
 # GymApp Privacy Policy
 
-**Last updated: 30 September 2026**
+**Last updated: 14 October 2026**
 
 ## The short version
 
-GymApp stores everything on your device. There are no accounts and no analytics. The one thing that leaves your phone is what you send the AI coach: when you ask it something, your training and the things you allowed go to a third-party AI provider, which writes the answer. The coach asks your permission, and shows you exactly what is sent, before it sends anything at all. If you never use the coach, your data never leaves your phone unless you export or share it yourself. While the app is in beta there is one more, and it is off unless you switch it on: **Share my chats with the developer**, in **Settings → Coach**, sends your coach conversations to our own server for the developer to read. It does not exist in the App Store version. The beta also has a **report button** on every screen: tapping it takes a screenshot and opens a note, and nothing is sent unless you tap Send (see "The beta's report button" below).
+GymApp stores everything on your device. There are no analytics. You can sign in with Apple during setup, or skip it; if you do, your Apple identifier and the name Apple shares are kept on your phone and sent nowhere. The one thing that leaves your phone is what you send the AI coach: when you ask it something, your training and the things you allowed go to a third-party AI provider, which writes the answer. The coach asks your permission, and shows you exactly what is sent, before it sends anything at all. If you never use the coach, your data never leaves your phone unless you export or share it yourself. While the app is in beta there is one more, and it is off unless you switch it on: **Share my chats with the developer**, in **Settings → Coach**, sends your coach conversations to our own server for the developer to read. It does not exist in the App Store version. The beta also has a **report button** on every screen: tapping it takes a screenshot and opens a note, and nothing is sent unless you tap Send (see "The beta's report button" below).
 
 ## What the app stores, and where
 
-GymApp keeps your workouts, routines, body measurements, progress photos, gym profiles, coach conversations, and settings **locally on your device**. This data is included in your device's standard iOS backups (iCloud or computer backups), which are governed by Apple's own privacy terms.
+GymApp keeps your workouts, routines, body measurements, progress photos, gym profiles, coach conversations, your profile (name, birthday and height, if you give them) and settings **locally on your device**. This data is included in your device's standard iOS backups (iCloud or computer backups), which are governed by Apple's own privacy terms.
 
 We do not sell any of it, and we cannot see it. The only part that ever leaves your device is what the coach sends when you use it, described next, and, in the beta, a report you choose to send with the report button (see "The beta's report button").
 
@@ -69,9 +69,13 @@ Separately, and only if you switch **Apple Health** on for coaching, GymApp read
 
 You can grant or revoke each permission at any time in the iOS **Health app → Sharing → Apps**, and refusing has no effect beyond those figures not appearing.
 
+## Signing in with Apple
+
+Signing in keeps two things in your phone's Keychain: the identifier Apple gives GymApp for you, and the name Apple shares. GymApp does not ask Apple for your email. None of it leaves your phone in this version. **Settings → Account → Sign out** removes it, so does deleting the app, and so does stopping GymApp from using your Apple ID in your iPhone's Settings.
+
 ## Sharing
 
-GymApp has no social features in this version: no accounts, no friends or followers, no community feed, and no way to publish anything on your behalf. Nothing is ever posted automatically.
+GymApp has no social features in this version: no public profiles, no friends or followers, no community feed, and no way to publish anything on your behalf. Nothing is ever posted automatically.
 
 When you choose to share a workout, the app hands the image or text to the standard iOS share sheet and you pick where it goes. What happens to it after that is governed by whichever app you chose.
 
