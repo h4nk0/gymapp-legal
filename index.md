@@ -1,10 +1,10 @@
 # GymApp Privacy Policy
 
-**Last updated: 14 October 2026**
+**Last updated: 15 October 2026**
 
 ## The short version
 
-GymApp stores everything on your device. There are no analytics. You can sign in with Apple during setup, or skip it; if you do, your Apple identifier and the name Apple shares are kept on your phone and sent nowhere. The one thing that leaves your phone is what you send the AI coach: when you ask it something, your training and the things you allowed go to a third-party AI provider, which writes the answer. The coach asks your permission, and shows you exactly what is sent, before it sends anything at all. If you never use the coach, your data never leaves your phone unless you export or share it yourself. While the app is in beta there is one more, and it is off unless you switch it on: **Share my chats with the developer**, in **Settings → Coach**, sends your coach conversations to our own server for the developer to read. It does not exist in the App Store version. The beta also has a **report button** on every screen: tapping it takes a screenshot and opens a note, and nothing is sent unless you tap Send (see "The beta's report button" below).
+GymApp stores everything on your device. There are no analytics. You can sign in with Apple during setup, or skip it; if you do, your Apple identifier and the name Apple shares are kept on your phone. Each time the app opens, it asks Apple whether that sign-in is still valid; they go nowhere else. The one thing that leaves your phone is what you send the AI coach: when you ask it something, your training and the things you allowed go to a third-party AI provider, which writes the answer. The coach asks your permission, and shows you exactly what is sent, before it sends anything at all. If you never use the coach, your data never leaves your phone unless you export or share it yourself. While the app is in beta there is one more, and it is off unless you switch it on: **Share my chats with the developer**, in **Settings → Coach**, sends your coach conversations to our own server for the developer to read. It does not exist in the App Store version. The beta also has a **report button** on every screen: tapping it takes a screenshot and opens a note, and nothing is sent unless you tap Send (see "The beta's report button" below).
 
 ## What the app stores, and where
 
@@ -71,7 +71,7 @@ You can grant or revoke each permission at any time in the iOS **Health app → 
 
 ## Signing in with Apple
 
-Signing in keeps two things in your phone's Keychain: the identifier Apple gives GymApp for you, and the name Apple shares. GymApp does not ask Apple for your email. None of it leaves your phone in this version. **Settings → Account → Sign out** removes it, so does deleting the app, and so does stopping GymApp from using your Apple ID in your iPhone's Settings.
+Signing in keeps two things in your phone's Keychain: the identifier Apple gives GymApp for you, and the name Apple shares. GymApp does not ask Apple for your email. Each time the app opens, it asks Apple whether that sign-in is still valid; apart from that, none of it leaves your phone in this version. **Settings → Account → Sign out** removes it, so does deleting the app, and so does stopping GymApp from using your Apple ID in your iPhone's Settings.
 
 ## Sharing
 
