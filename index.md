@@ -32,8 +32,8 @@ Once you have agreed, **Settings → Coaching → What the coach reads** holds a
 - During a workout: the routine, the exercise you are on, and the sets done so far.
 - What you have told the app about yourself: your goal (including any target weight you set), your weekly workout target, training days, experience, session length, the equipment you have or don't have, exercises you dislike, and any injuries, with the notes you add about them.
 - The names of the exercises in the app's library, the coach personality you picked, your weight unit, and the date and time on your phone.
-- A random ID, created the first time you use the coach. Our server uses it to count questions, and, if you switched the beta's **Share my chats** on, to file the conversations it sent under. A report sent with the beta's report button carries it too, if it exists. It is not passed on.
-- An ID Apple creates for this app and your Apple Account, and Apple's signed record of your coach subscription (when it started and ends, and the price and country Apple records with it). Neither says who you are. Our server checks Apple's signature on them, then uses the ID to count your coaching each week. They are not passed on.
+- A random ID, created the first time you use the coach. Our server uses it to count questions sent without the Apple ID below, and, if you switched the beta's **Share my chats** on, to file the conversations it sent under. A report sent with the beta's report button carries it too, if it exists. It is not passed on.
+- An ID Apple creates for this app and your Apple Account, with Apple's signed record of this copy of the app (such as its version and when it was first downloaded), and, if you subscribe to the coach, Apple's signed record of the subscription and its renewal (such as when it started and ends, and the price and country Apple records with it). None of it says who you are. Our server checks Apple's signature on them, then uses the ID to count your coaching each week. They are not passed on.
 
 And, unless you switch the category off:
 
@@ -50,11 +50,11 @@ The coach's **What the coach can see** page shows, word for word, what it is sen
 
 **Where it goes**
 
-To a small server we run on Cloudflare, which passes it to OpenAI, the AI provider, to write the answer. It is sent over encrypted connections. Both can process it outside your country, including in the United States. The AI provider's handling of it is covered by its own terms, which give it the same protections described here: it is not used to train models, and it is deleted on the timeline below.
+To a small server we run on Cloudflare, which passes it to a third-party AI provider to write the answer. It is sent over encrypted connections. Both can process it outside your country, including in the United States. The AI provider's handling of it is covered by its own terms, which give it the same protections described here: it is not used to train models, and it is deleted on the timeline below.
 
 **How long it is kept**
 
-- Our server does not store your messages or the coach's answers. The one exception is the beta: if you switch **Share my chats with the developer** on in **Settings → Coach**, your coach conversations are sent to our server so the developer can read them and improve the coach. They are deleted automatically after 60 days, the switch is off unless you turn it on, and it does not exist in the App Store version of the app. It keeps a weekly count of questions asked and what they cost to answer, under the ID Apple creates for this app, for eight weeks. Beta versions from before 28 October 2026 are counted by day under the random ID instead. It also keeps brief error records, which contain no message text.
+- Our server does not store your messages or the coach's answers. The one exception is the beta: if you switch **Share my chats with the developer** on in **Settings → Coach**, your coach conversations are sent to our server so the developer can read them and improve the coach. They are deleted automatically after 60 days, the switch is off unless you turn it on, and it does not exist in the App Store version of the app. It keeps a weekly count of questions asked and what they cost to answer, under the ID Apple creates for this app, for eight weeks. A question sent without Apple's ID (from a beta version before 28 October 2026, or when the app could not get it) is counted by day under the random ID instead. It also keeps brief error records, which contain no message text.
 - The AI provider does not use it to train its models. It may keep it for up to 30 days to check for abuse, and then deletes it, unless the law requires it to keep it longer.
 - Your conversations stay on your phone, unless you switched the beta's **Share my chats** on, in which case a copy also sits on our server. You can delete any of them from the coach's history, all of them at once with **Coaching → Delete all chats**, and deleting the app removes them all. Deleting a chat in the app deletes it from your phone; ask the developer to delete the copy, or leave it to expire 60 days after it was last sent.
 
@@ -90,7 +90,7 @@ While the app is in beta, a small button floats on every screen. Tapping it take
 
 - your note, exactly as you wrote it, and the date and time you wrote it (in your phone's time zone);
 - the screenshot, unless you switched it off in the note first. It shows whatever was on your screen, which can include your own workouts, body figures, Health figures or photos;
-- the app's diagnostics log: app version, phone model, iOS version, light or dark mode, text size, free storage, and a record of app events such as launches and failed saves. It contains no names, weights, reps or notes;
+- the app's diagnostics log: app version, phone model, iOS version, light or dark mode, text size, and a record of app events such as launches and failed saves. It contains no names, weights, reps or notes;
 - the coach's random ID if you have used the coach, so reports from one phone can be read together. Sending a report never creates that ID.
 
 Reports are read by the developer to fix problems, and are deleted automatically 60 days after they are sent, or sooner if you ask. A report that could not be sent waits on your phone (not in your backups) and goes the next time the app is open with a connection. **Settings → Beta → Show report button** hides the button and deletes any report still waiting. The button does not exist in the App Store version.
